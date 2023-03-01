@@ -1,5 +1,9 @@
 #pragma once
+#include "BaseMemoryManager.h"
+//#include "MemoryManagerWithFree.h"
 
+static BaseMemoryManager memoryManager;
+// static MemoryManagerWithFree memoryManager;
 template <class T>
 class CMyAllocator
 {
@@ -21,13 +25,14 @@ public:
 	{
 		//printf("Allocate %d\n", (int)(Count * sizeof(T)));
 
-		return (T*)malloc(sizeof(T) * Count);
+		//return (T*)malloc(sizeof(T) * Count);
+		return (T*)memoryManager.allocate(sizeof(T) * Count);
 	}
 
 	void deallocate(T* V, size_t Count)
 	{
 		//printf("Free %d\n", (int)(Count * sizeof(T)));
 
-		free(V);
+		memoryManager.free(V);
 	}
 };

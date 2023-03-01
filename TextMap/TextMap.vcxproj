@@ -130,11 +130,10 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="task.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="CMyAllocator.h" />
     <ClInclude Include="CStringComparator.h" />
+    <ClInclude Include="BaseMemoryManager.h" />
+    <ClInclude Include="MemoryManagerWithFree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
