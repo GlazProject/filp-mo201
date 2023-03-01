@@ -1,9 +1,9 @@
 #pragma once
 #include "BaseMemoryManager.h"
-//#include "MemoryManagerWithFree.h"
+#include "MemoryManagerWithFree.h"
 
-static BaseMemoryManager memoryManager;
-// static MemoryManagerWithFree memoryManager;
+// static BaseMemoryManager memoryManager;
+static MemoryManagerWithFree memoryManager;
 template <class T>
 class CMyAllocator
 {
