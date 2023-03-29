@@ -1,4 +1,5 @@
 #pragma once
+#include <math.h>
 const auto MEGABYTE = 1024*1024;
 
 

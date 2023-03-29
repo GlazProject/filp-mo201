@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\MemoryManagers">
+      <UniqueIdentifier>{30f2f717-e8e2-4494-a779-e404060e4b63}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -27,10 +30,16 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="BaseMemoryManager.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\MemoryManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="GreedyMemoryManager.h">
+      <Filter>Файлы заголовков\MemoryManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManagerTwins.h">
+      <Filter>Файлы заголовков\MemoryManagers</Filter>
     </ClInclude>
     <ClInclude Include="MemoryManagerWithFree.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\MemoryManagers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

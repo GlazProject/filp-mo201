@@ -95,6 +95,7 @@ void TextMapTest()
 {
 	map<char*, size_t, CStringComparator, CMyAllocator<char*>> myMap;
 	map<char*, size_t> defaultMap;
+	//char* book = (char*)"test.txt";
 	char* book = (char*)"book.txt";
 
 
@@ -108,17 +109,19 @@ void TextMapTest()
 	
 
 // -------------------- Calculate time of default map ----------------------
-/*	Start = GetCurrentTimeMs();
+	Start = GetCurrentTimeMs();
 	text = CreateTextMapFromFileAndGetTextPtr(defaultMap, book);
 	End = GetCurrentTimeMs();
-	printf("Time with default allocator (ms) %d\n", (int)(End - Start));*/
+	printf("Time with default allocator (ms) %d\n", (int)(End - Start));
 // -------------------- Calculate time of default map ----------------------
 
 
+// ------------------ Print all words and their count ----------------------
 	/*for (auto Entry : SortTextMapDescendingCount(myMap))
 	{
 		printf("Word \"%s\", count %I64d\n", Entry.first, (uint64_t)Entry.second);
 	}*/
+// ------------------ Print all words and their count ----------------------
 
 	delete text;
 	text = nullptr;
